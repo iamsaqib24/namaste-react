@@ -1,4 +1,4 @@
-const haeding = React.createElement("h1", {}, "Hello World!");
+const haeding = React.createElement("h1", { className: "heading-1", id: "main-heading"}, "Hello World!");
 
 const haeding2 = React.createElement("h2", {}, "JavaScript");
 

@@ -1,13 +1,15 @@
-const haeding = React.createElement("h1", { className: "heading-1", id: "main-heading"}, "Hello World!");
+const heading = React.createElement("h1", { className: "heading-1", id: "main-heading" }, "Hello World!");
 
-const haeding2 = React.createElement("h2", {}, "JavaScript");
+const heading2 = React.createElement("h2", { id: "heading-2" }, "JavaScript");
 
-const haeding3 = React.createElement("h3", {}, "React");
+const heading3 = React.createElement("h3", { id: "heading-3" }, "React");
 
-console.log(haeding)
+const container = React.createElement("div", { id: "container" }, [heading, heading2, heading3]);
+
+console.log(heading)
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 // root.render([haeding, haeding2, haeding3]);
 
-root.render(haeding)
+root.render(container);

@@ -60,8 +60,24 @@ const navbar = (
             <li>Home</li>
             <li>Projects</li>
             <li>Docs</li>
+            <li>Contact</li>
         </ul>
     </nav>
 )
 
-ReactDOM.render(navbar, document.getElementById("root"))
+const page = (
+    <div>
+        <h1>I am leaning React from Scrimba</h1>
+        <h3>Reasons I'm learning react</h3>
+        <ol>
+            <li>It's composable</li>
+            <li>It's declarative</li>
+            <li>It's a hireable skill</li>
+        </ol>
+    </div>
+)
+
+// ReactDOM.render(navbar, document.getElementById("root"))
+
+const root = ReactDOM.createRoot(document.getElementById("root"))
+root.render(page)

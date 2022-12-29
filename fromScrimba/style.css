@@ -1,18 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
 nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  background-color: #21222a;
+  height: 91px;
+  padding: 30px 25px;
+}
+
+nav > h3 {
+  color: #00d8ff;
+  margin-right: auto;
+}
+
+nav > h4 {
+  color: #deebf8;
 }
 
 .nav-logo {
   width: 60px;
-}
-
-.nav-items {
-  list-style: none;
-  display: flex;
-}
-
-.nav-items > li {
-  padding: 10px;
+  margin-right: 7px;
 }

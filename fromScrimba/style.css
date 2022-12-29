@@ -4,7 +4,12 @@
 
 body {
   margin: 0;
+  font-family: Inter, sans-serif;
+  background-color: #282d35;
+  height: 100vh;
 }
+
+/* Navbar Component */
 
 nav {
   display: flex;
@@ -15,8 +20,10 @@ nav {
 }
 
 nav > h3 {
-  color: #00d8ff;
+  color: #61dafb;
   margin-right: auto;
+  font-weight: 700;
+  font-size: 30px;
 }
 
 nav > h4 {
@@ -24,6 +31,38 @@ nav > h4 {
 }
 
 .nav-logo {
-  width: 60px;
+  width: 50px;
   margin-right: 7px;
+}
+
+/* Main Component */
+
+main {
+  padding: 55px 25px;
+  color: white;
+  /* background-image: url(./react-icon.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center; */
+}
+
+.main-title {
+  margin: 0;
+  font-size: 39px;
+  letter-spacing: -0.05em;
+}
+
+.main-facts {
+  margin-top: 45px;
+  max-width: 400px;
+}
+
+.main-facts > li {
+  line-height: 19px;
+  padding-block: 10px;
+}
+
+.main-facts > li::marker {
+  font-size: 1.4rem;
+  color: #61dafb;
 }

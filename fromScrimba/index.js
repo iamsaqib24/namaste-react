@@ -199,7 +199,12 @@ function Header() {
     return (
         <header>
             <nav>
-                <img src="" alt="react-logo" />
+                <img src="./react-icon.png" alt="react-icon" className="nav-logo" />
+                <ul className="nav-items">
+                    <li>Pricing</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
             </nav>
         </header>
     )

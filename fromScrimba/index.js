@@ -195,6 +195,9 @@ Hints:
 
 // refactoring above code,
 
+// import React from "react"
+// import Header from "./Header"
+
 function Header() {
     return (
         <header>

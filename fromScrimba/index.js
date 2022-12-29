@@ -146,3 +146,23 @@ Hints:
 // 5. What does it mean for something to be "composable"?
 // We have small pieces that we can put together to make something
 // larger/greater than the individual pieces.
+
+
+// Learning components, Pascal way
+
+function FirstComponent() {
+    return (
+        <div>
+            <h1>Fun facts about React</h1>
+            <ul>
+                <li>Was first released in 2013</li>
+                <li>Was originally created by Jordan Walke</li>
+                <li>Is maintained by Meta(Facebook)</li>
+                <li>Power thousands of enterprise apps including mobile apps</li>
+            </ul>
+        </div>
+    )
+}
+
+const root = ReactDOM.createRoot(document.getElementById("root"))
+root.render(<FirstComponent />)

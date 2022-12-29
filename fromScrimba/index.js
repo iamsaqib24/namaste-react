@@ -168,14 +168,46 @@ Hints:
 // root.render(<FirstComponent />)
 
 
-function Page() {
+// function Page() {
+//     return (
+//         <div>
+//             <header>
+//                 <nav>
+//                     {/* <img src="./react-logo.png" width="40px" /> */}
+//                 </nav>
+//             </header>
+//             <h1>Reasons I'm excited to learn React</h1>
+//             <ol>
+//                 <li>It's a popular library, so I'll be
+//                 able to fit in with the cool kids!</li>
+//                 <li>I'm more likely to get a job as a developer
+//                 if I know React</li>
+//             </ol>
+//             <footer>
+//                 <small>© 2021 Ziroll development. All rights reserved.</small>
+//             </footer>
+//         </div>
+//     )
+// }
+
+// const root = ReactDOM.createRoot(document.getElementById("root"))
+// root.render(<Page />)
+
+// refactoring above code,
+
+function Header() {
+    return (
+        <header>
+            <nav>
+                <img src="" alt="react-logo" />
+            </nav>
+        </header>
+    )
+}
+
+function MainContent() {
     return (
         <div>
-            <header>
-                <nav>
-                    {/* <img src="./react-logo.png" width="40px" /> */}
-                </nav>
-            </header>
             <h1>Reasons I'm excited to learn React</h1>
             <ol>
                 <li>It's a popular library, so I'll be
@@ -183,9 +215,24 @@ function Page() {
                 <li>I'm more likely to get a job as a developer
                 if I know React</li>
             </ol>
-            <footer>
+        </div>
+    )
+}
+
+function Footer() {
+    return (
+        <footer>
                 <small>© 2021 Ziroll development. All rights reserved.</small>
             </footer>
+    )
+}
+
+function Page() {
+    return (
+        <div>
+            <Header />
+            <MainContent />
+            <Footer />
         </div>
     )
 }

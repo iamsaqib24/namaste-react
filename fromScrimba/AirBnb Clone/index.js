@@ -35,6 +35,23 @@ function Card() {
     )
 }
 
+function Contact(props) {
+    return (
+        <div className="contact-card">
+            <img src="./mr-whiskerson.png"/>
+            <h3>{props.name}</h3>
+            <div className="info-group">
+                <img src="./phone-icon.png" />
+                <p>{props.phone}</p>
+            </div>
+            <div className="info-group">
+                <img src="./mail-icon.png" />
+                <p>{props.email}</p>
+            </div>
+        </div>
+    )
+}
+
 
 function Page() {
     return (
@@ -42,6 +59,12 @@ function Page() {
             <Navbar />
             <Hero />
             <Card />
+            <Contact name="Mr. Saqib"
+                     phone="7888787228"
+                     email="iamsaqib24@gmail.com" />
+            <Contact name="Mr. Apple"
+                     phone="9814559880"
+                     email="abc@abc.com" />
         </div>
     )
 }

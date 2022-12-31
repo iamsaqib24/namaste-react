@@ -17,3 +17,12 @@ A module bundler is a tool that takes pieces of JavaScript and their dependencie
 # what is .parcel-cache ?
 
 The . cache folder (or . parcel-cache in parcel v2) stores information about your project when parcel builds it, so that when it rebuilds, it doesn't have to re-parse and re-analyze everything from scratch. It's a key reason why parcel can be so fast in development mode.
+
+# What is NPX ?
+
+it's a package runner tool that comes with npm. It is an npm package runner that can execute any package that you want from the npm registry without even installing that package.
+
+# Difference between dependencies and devDependencies ?
+
+"dependencies": Packages required by your application in production.
+"devDependencies": Packages that are only needed for local development and testing.
